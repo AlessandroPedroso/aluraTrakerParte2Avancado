@@ -15,6 +15,7 @@ import Formulario from "../components/Formulario.vue";
 import Tarefa from "../components/Tarefa.vue";
 import ITarefa from "../interfaces/ITarefa";
 import Box from "../components/Box.vue";
+
 export default defineComponent({
     name: "App",
     components: {Formulario, Tarefa, Box },
@@ -32,7 +33,6 @@ export default defineComponent({
         salvarTarefa(tarefa: ITarefa): void {
             this.tarefas.push(tarefa);
         },
-
     },
 });
 </script>
