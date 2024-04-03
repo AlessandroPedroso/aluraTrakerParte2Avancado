@@ -13,6 +13,14 @@ export default defineComponent({
     props:{
         tempoEmSegundos:{type: Number, default:0}
     },
+    // data() {
+    //     return{
+    //         tempoDecorrido: '' as string
+    //     }
+    // },
+    // created() {
+    //     this.tempoDecorrido = new Date(this.tempoEmSegundos * 1000).toISOString().substr(11,8);
+    // },
     computed:{
         tempoDecorrido() : string{
             return new Date(this.tempoEmSegundos * 1000).toISOString().substr(11,8);
