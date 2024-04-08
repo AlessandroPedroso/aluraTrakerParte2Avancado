@@ -32,7 +32,7 @@ export default defineComponent({
                 // console.log('incrementando o contador')
                 this.tempoEmSegundos +=1
             },1000)
-
+            
             // console.log('iniciando');
         },
 
